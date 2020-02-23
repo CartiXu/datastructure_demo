@@ -12,9 +12,13 @@
     <!-- services -->
     <section class="services">
       <div class="container grid-3 center">
+        
         <div>
+          
+          <router-link :to="{name:'demo'}"> 
           <img width="100px" height="100px" src="../assets/linked.png" alt />
           <h3>单链表</h3>
+          </router-link>
         </div>
 
         <div>
@@ -34,7 +38,7 @@
       <div class="container">
         <div class="grid-2">
           <div class="center">
-            <img src="../assets/link2.png" alt />
+            <img src="../assets/about_us.png" alt />
           </div>
           <div>
             <h3>关于我们</h3>
@@ -132,6 +136,15 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+}
+
+.grid-3 div a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.container.grid-3.center div :hover{
+  cursor: pointer;
 }
 /* about us */
 .grid-2 {
