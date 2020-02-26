@@ -12,12 +12,10 @@
     <!-- services -->
     <section class="services">
       <div class="container grid-3 center">
-        
         <div>
-          
-          <router-link :to="{name:'demo'}"> 
-          <img width="100px" height="100px" src="../assets/linked.png" alt />
-          <h3>单链表</h3>
+          <router-link :to="{name:'demo'}">
+            <img width="100px" height="100px" src="../assets/linked.png" alt />
+            <h3>单链表</h3>
           </router-link>
         </div>
 
@@ -57,13 +55,10 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  }
+  components: {}
 };
 </script>
 
@@ -138,12 +133,12 @@ p {
   grid-gap: 20px;
 }
 
-.grid-3 div a{
+.grid-3 div a {
   text-decoration: none;
   color: #fff;
 }
 
-.container.grid-3.center div :hover{
+.container.grid-3.center div :hover {
   cursor: pointer;
 }
 /* about us */
